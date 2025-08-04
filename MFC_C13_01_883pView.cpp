@@ -245,6 +245,7 @@ void CMFCC1301883pView::DrawBezierCurve(CDC* pDC, bool bLine)
 void CMFCC1301883pView::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	AfxMessageBox(_T("마우스 왼쪽 버튼을 눌렀습니다."));
 	if (m_nMode == DRAW_MODE)
 	{
 		//다시그리기 또는 처음 그리는 경우 : 초기화
@@ -314,6 +315,7 @@ void CMFCC1301883pView::OnMouseMove(UINT nFlags, CPoint point)
 void CMFCC1301883pView::OnRButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	AfxMessageBox(_T("RButton"));
 	if (m_nMode == DRAW_MODE)		// 현재 선 그리기 모드이면
 	{
 		// 현재 저장된 점들의 수가 PolyBezier() 함수가 요구하는 점의 개수와 동일하면
